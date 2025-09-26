@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="style.css">
+    <title>Mon Portfolio</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Lipari Lucas</h2>
+            <div class="toggle">☰</div>
+        </header>
+        <video src="video_web.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Votre</h2>
+            <h3>Développeur WEB</h3>
+            <p>Bienvenue sur mon portfolio 👨‍💻 <br>
+
+                Je me présente Lipari Lucas , je suis actuellement en recherche de travail.<br>
+                Je suis <b>Passionné</b> , <b>Curieux</b> , <b>Motivé</b> ... JE SUIS <b>VOTRE</b> DEVELOPPEUR WEB</p>
+            <a href="pdf/CV_LUCAS_LIPARI.pdf">Télécharger mon CV </a>
+        </div>
+        <ul class="social">
+            <li><a href="contact.html"><img src="images/at-solid.svg">Contact</a></li>
+            <li><a href="https://codepen.io/LukeDwam"><img src="images/codepen-brands.svg">CodePen</a></li>
+            <li><a href="https://github.com/LucasDWWM"><img src="images/github-brands.svg">GitHub</a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Mes projets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+
+            if(menuToggle.classList.contains('active')){
+                menuToggle.textContent = '✖';
+            } else {
+                menuToggle.textContent = '☰';
+            }
+        });
+    </script>
+
+</body>
+
+</html>
