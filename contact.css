@@ -151,7 +151,6 @@ header .logo
   filter: invert(1);
   transform: scale(0.5);
   transition: 0.5s;
-  text-decoration: none;
 }
 .social li a:hover
 {
